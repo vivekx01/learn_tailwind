@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,45 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+
+<body class="font-mono">
     <div class="flex h-screen">
         <img class="hidden lg:block w-1/2" src="../farm.jpg" alt="">
         <div class="flex flex-col justify-center items-center w-full lg:w-1/2">
-            <h1 class="bg-orange-500 text-center">test</h1>
+            <div>
+                <div class="text-xl text-center font-bold lg:text-left">
+                    <span class="text-green-600">&#9650;</span>
+                    <span>FarmMan</span>
+                </div>
+                <div class="text-3xl text-center font-bold lg:text-left mt-3">
+                    <h2>Hello,</h2>
+                    <h2>Welcome back</h2>
+                </div>
+
+                <form class="m-8 w-[80%] lg:w-96 mx-auto space-y-4">
+                    <h4>Login to manage your account</h4>
+                    <input class="border w-full px-4 py-2" type="email" placeholder="Email">
+                    <input class="border w-full px-4 py-2" type="password" placeholder="Password">
+                    <div class="text-blue-600 cursor-pointer hover:text-blue-400">Forgot your password?</div>
+                    <button
+                        class="w-full bg-green-600 text-white rounded py-2 font-bold hover:bg-green-500">Login</button>
+                </form>
+            </div>
+            <div class="text-center space-y-4">
+                <span>OR</span>
+                <div class="flex justify-center items-center gap-8">
+                    <i class="fa-brands fa-facebook text-2xl cursor-pointer"></i>
+                    <i class="fa-brands fa-google text-2xl cursor-pointer"></i>
+                    <i class="fa-brands fa-instagram text-2xl cursor-pointer"></i>
+                </div>
+            </div>
+            <div class="mt-4 text-sm text-center">don't have an account?
+                <span class="text-blue-600 cursor-pointer">
+                    Sign up here
+                </span>
+            </div>
         </div>
     </div>
 </body>
+
 </html>
